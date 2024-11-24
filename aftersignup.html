@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #303D5E;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A2B3C;
+    padding: 30px;
+    border-radius: 8px;
+    width: 140%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -50px; /* Moves logo above the box */
+    left: 50%; /* Centers logo horizontally */
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.signup-box, .login-box {
+    width: 45%;
+    text-align: center;
+}
+
+.signup-box {
+    background-color: #1A2B3C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffffff; /* White border around the signup box */
+}
+
+.signup-box h2 {
+    color: #00A0E3;
+}
+
+.signup-box p {
+    margin: 10px 0 20px;
+    font-size: 1rem;
+}
+
+.signup-box form input[type="text"],
+.signup-box form input[type="tel"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A2B3C;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.signup-btn {
+    width: 80%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #005BB5;
+}
+
+.or-text {
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #888;
+    padding-bottom: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    width: 120px; /* Consistent width for both buttons */
+}
+
+.google-button {
+    background-color: #DB4437;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.social-button i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.login-box {
+    position: relative;
+    
+}
+
+.login-box h3 {
+    color: #FFA500;
+    margin-bottom: 15px;
+    padding-bottom: 40px;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px; /* Increased top value to move button down */
+    right: 175px; /* Keeps button aligned to the right */
+}
+
+
+
+.login-btn:hover {
+    background-color: #666;
+}
+
+.qr-code {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.login-box ol {
+    list-style: decimal;
+    text-align: left;
+    padding-left: 30px;
+    
+    font-size: 0.9rem;
+}
