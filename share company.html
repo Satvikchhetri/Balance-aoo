@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+
+    .container {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 250px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .user-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    .user-table th,
+    .user-table td {
+      padding: 5px;
+      text-align: left;
+      font-size: 12px;
+    }
+
+    .user-table th {
+      color: #c9d1d9;
+      border-bottom: 1px solid #444c56;
+    }
+
+    .user-table tr {
+      transition: background 0.3s;
+    }
+
+    .user-table tr:hover {
+      background-color: #21262d;
+    }
+
+    .user-table td {
+      border-bottom: 1px solid #444c56;
+    }
+
+    .user-avatar {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 5px;
+      font-size: 10px;
+    }
+
+    .user-avatar.R {
+      background-color: #0078d7;
+    }
+
+    .user-avatar.M {
+      background-color: #f1c40f;
+    }
+
+    .user-avatar.P {
+      background-color: #e74c3c;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .add-user-btn {
+      background-color: #238636;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .add-user-btn:hover {
+      background-color: #2ea043;
+    }
+
+    .icon-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .icon-btn img {
+      width: 16px;
+      height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Designation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div style="display: flex; align-items: center;">
+              <div class="user-avatar R">R</div>
+              Rajni Mishra
+            </div>
+          </td>
+          <td>Accountant</td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display: flex; align-items: center;">
+              <div class="user-avatar M">M</div>
+              Manoj Saxena
+            </div>
+          </td>
+          <td>Salesman</td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display: flex; align-items: center;">
+              <div class="user-avatar P">P</div>
+              Premnath Kushwaha
+            </div>
+          </td>
+          <td>Dispatcher</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="button-container">
+      <button class="add-user-btn">Add User</button>
+      <div>
+        <button class="icon-btn delete">
+          <img src="https://img.icons8.com/ios-filled/50/e74c3c/trash--v1.png" alt="Delete">
+        </button>
+        <button class="icon-btn edit">
+          <img src="https://img.icons8.com/ios-filled/50/0078d7/edit--v1.png" alt="Edit">
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

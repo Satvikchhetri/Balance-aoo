@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <style>
+    /* General Body Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Main Container */
+    .login-container {
+      background-color: #161b22;
+      width: 350px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    /* Logo Section */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #50a9ff;
+    }
+
+    .logo img {
+      width: 40px;
+      vertical-align: middle;
+    }
+
+    /* Login Form */
+    .login-form h2 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #50a9ff;
+    }
+
+    .login-form p {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #c9d1d9;
+    }
+
+    .login-form .input-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .login-form .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #444c56;
+      border-radius: 5px;
+      background-color: #0d1117;
+      color: white;
+      font-size: 14px;
+    }
+
+    .login-form .input-group input:focus {
+      outline: none;
+      border-color: #50a9ff;
+    }
+
+    .error-message {
+      font-size: 12px;
+      color: #e74c3c;
+      text-align: left;
+      margin-top: 5px;
+    }
+
+    /* Submit Button */
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #238636;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-form button:hover {
+      background-color: #2ea043;
+    }
+
+    /* Continue With Section */
+    .continue-with {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color: #c9d1d9;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .social-buttons button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #444c56;
+      background-color: #0d1117;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background-color 0.3s;
+    }
+
+    .social-buttons button:hover {
+      background-color: #21262d;
+    }
+
+    .social-buttons .google {
+      border-color: #f4c20d;
+    }
+
+    .social-buttons .whatsapp {
+      border-color: #25d366;
+      color: #25d366;
+    }
+
+    .social-buttons img {
+      width: 16px;
+    }
+
+    /* Sign Up Section */
+    .signup-section {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+
+    .signup-section a {
+      color: #50a9ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-section a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="https://via.placeholder.com/40" alt="Balance Logo">
+      balance
+    </div>
+
+    <!-- Login Form -->
+    <form class="login-form">
+      <h2>Log In</h2>
+      <p>Welcome Back</p>
+
+      <!-- Mobile Input -->
+      <div class="input-group">
+        <input type="text" placeholder="+91   Enter Mobile No.">
+        <span class="error-message">Can not be empty</span>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Continue With Section -->
+    <p class="continue-with">or Continue with</p>
+    <div class="social-buttons">
+      <button class="google">
+        <img src="https://img.icons8.com/ios-filled/50/f4c20d/google-logo--v1.png" alt="Google Logo">
+        Google
+      </button>
+      <button class="whatsapp">
+        <img src="https://img.icons8.com/ios-filled/50/25d366/whatsapp.png" alt="WhatsApp Logo">
+        WhatsApp
+      </button>
+    </div>
+
+    <!-- Sign Up Section -->
+    <div class="signup-section">
+      Don’t have an Account? <a href="#">SIGN UP</a>
+    </div>
+  </div>
+</body>
+</html>

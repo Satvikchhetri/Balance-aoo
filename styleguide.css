@@ -1,0 +1,12 @@
+:root {
+    --heading-font-family: "Poppins", Helvetica;
+    --heading-font-weight: 600;
+    --heading-font-size: 28px;
+    --heading-letter-spacing: 0px;
+    --heading-line-height: 100%;
+    --heading-font-style: normal;
+    --collection-1-boolean: none;
+    --variable-collection-text-secondary: rgba(108, 117, 125, 1);
+    --variable-collection-text-muted: rgba(108, 117, 125, 1);
+  }
+  
